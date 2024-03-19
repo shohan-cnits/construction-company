@@ -1,0 +1,154 @@
+/* Fonts Link Start */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+@font-face {
+  font-family: THIAGADEMORegular;
+  src: url(../font/THIAGADEMORegular.ttf);
+}
+
+/* Fonts Link End */
+
+/* Universal Start */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color: #ff9900;
+  --secondary-color: #7a94a3;
+  --black: #000000;
+  --white: #ffffff;
+  --primary-font: "THIAGADEMORegular";
+  --secondary-font: "Rubik";
+  --primary-border: 1px solid #7a94a3;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--primary-font);
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-family: var(--secondary-font);
+}
+
+/* Universal End */
+
+#hero {
+  width: 100%;
+  height: 100vh;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper_slide_wrapper img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-pagination-bullet {
+  width: 30px !important;
+  height: 30px !important;
+  background: none !important;
+  border-radius: 5px !important;
+  border: 2px solid var(--primary-color);
+  color: #fff;
+  transition: 0.3s;
+  font-family: var(--secondary-font);
+}
+
+.swiper-pagination-bullet-active {
+  border: 2px solid var(--primary-color) !important;
+}
+
+.swiper-pagination-bullet:hover {
+  background: var(--primary-color) !important;
+}
+
+.swiper-pagination-bullet::after {
+  content: "01";
+  font-weight: 500;
+  font-family: var(--secondary-font) !important;
+}
+
+.swiper-pagination-bullet-second {
+  width: 30px !important;
+  height: 30px !important;
+  background: none !important;
+  border-radius: 5px !important;
+  border: 2px solid var(--primary-color);
+  color: #fff;
+  transition: 0.3s;
+}
+
+.swiper-pagination-bullet-second::after {
+  content: "02";
+}
+
+.swiper-pagination-vertical.swiper-pagination-bullets,
+.swiper-vertical > .swiper-pagination-bullets {
+  left: 10% !important;
+  right: 0 !important;
+  top: 80% !important;
+}
+
+.swiper-pagination-vertical.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-vertical > .swiper-pagination-bullets .swiper-pagination-bullet {
+  /* margin: 30px 0px 30px 0 !important; */
+  display: block;
+}
+
+.swiper-pagination-bullet:nth-child(2) {
+  width: 4px !important;
+  height: 30px !important;
+  border: 2px solid var(--white);
+  right: 0 !important;
+  margin-left: 14px !important;
+}
+
+.swiper-pagination-bullet:nth-child(2)::after {
+  content: "";
+}
+
+.swiper-pagination-bullet:nth-child(3)::after {
+  content: "02";
+}
+
+.swiper-pagination-bullet:nth-child(4) {
+  width: 4px !important;
+  height: 30px !important;
+  border: 2px solid var(--white);
+  right: 0 !important;
+  margin-left: 14px !important;
+}
+
+.swiper-pagination-bullet:nth-child(4)::after {
+  content: "";
+}
+
+.swiper-pagination-bullet:nth-child(5)::after {
+  content: "03";
+}
