@@ -46,6 +46,7 @@ p {
 #hero {
   width: 100%;
   height: 100vh;
+  position: relative;
 }
 
 .swiper {
@@ -65,7 +66,7 @@ p {
 .swiper_slide_wrapper img {
   display: block;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   object-fit: cover;
 }
 
@@ -113,6 +114,7 @@ p {
   left: 10% !important;
   right: 0 !important;
   top: 80% !important;
+  bottom: 0 !important;
 }
 
 .swiper-pagination-vertical.swiper-pagination-bullets .swiper-pagination-bullet,
@@ -151,4 +153,8 @@ p {
 
 .swiper-pagination-bullet:nth-child(5)::after {
   content: "03";
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--primary-color) !important;
 }
