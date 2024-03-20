@@ -44,9 +44,8 @@ p {
 /* Universal End */
 
 #hero {
-  width: 100%;
-  height: 100vh;
   position: relative;
+  height: 100vh;
 }
 
 .swiper {
@@ -63,7 +62,7 @@ p {
   align-items: center;
 }
 
-.swiper_slide_wrapper img {
+.slider_image img {
   display: block;
   width: 100%;
   height: 100vh;
@@ -79,10 +78,12 @@ p {
   color: #fff;
   transition: 0.3s;
   font-family: var(--secondary-font);
+  opacity: 1 !important;
 }
 
 .swiper-pagination-bullet-active {
   border: 2px solid var(--primary-color) !important;
+  opacity: 1 !important;
 }
 
 .swiper-pagination-bullet:hover {
@@ -95,16 +96,6 @@ p {
   font-family: var(--secondary-font) !important;
 }
 
-.swiper-pagination-bullet-second {
-  width: 30px !important;
-  height: 30px !important;
-  background: none !important;
-  border-radius: 5px !important;
-  border: 2px solid var(--primary-color);
-  color: #fff;
-  transition: 0.3s;
-}
-
 .swiper-pagination-bullet-second::after {
   content: "02";
 }
@@ -113,7 +104,7 @@ p {
 .swiper-vertical > .swiper-pagination-bullets {
   left: 10% !important;
   right: 0 !important;
-  top: 80% !important;
+  top: 70% !important;
   bottom: 0 !important;
 }
 
@@ -124,9 +115,9 @@ p {
 }
 
 .swiper-pagination-bullet:nth-child(2) {
-  width: 4px !important;
-  height: 30px !important;
-  border: 2px solid var(--white);
+  width: 0px !important;
+  height: 25px !important;
+  border: 1.5px solid var(--white);
   right: 0 !important;
   margin-left: 14px !important;
 }
@@ -140,9 +131,9 @@ p {
 }
 
 .swiper-pagination-bullet:nth-child(4) {
-  width: 4px !important;
-  height: 30px !important;
-  border: 2px solid var(--white);
+  width: 0px !important;
+  height: 25px !important;
+  border: 1.5px solid var(--white);
   right: 0 !important;
   margin-left: 14px !important;
 }
