@@ -149,3 +149,133 @@ p {
 .swiper-pagination-bullet-active {
   background: var(--primary-color) !important;
 }
+
+.slider_image {
+  position: relative;
+}
+
+.hero_heading {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  right: 0;
+}
+
+.hero_heading h1 {
+  font-size: 50px;
+  color: var(--white);
+  width: 900px;
+  display: block;
+  position: relative;
+  margin: auto;
+}
+
+.hero_header_img {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+}
+
+.hero_banner_img {
+  position: relative;
+  cursor: pointer;
+}
+
+.hero_banner_img img {
+  width: 650px;
+}
+
+.hero_banner_img_text {
+  position: absolute;
+  top: 15%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.hero_banner_img_text h1 {
+  font-size: 50px;
+}
+
+.hero_btn {
+  position: absolute;
+  top: 70%;
+  left: 0;
+  right: 0;
+}
+
+.hero_btn a {
+  width: 160px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  font-family: var(--secondary-font);
+  font-weight: 500;
+  font-size: 1rem;
+  border: 1px solid var(--primary-color);
+  color: var(--white);
+  background: var(--primary-color);
+  border-radius: 3px;
+}
+
+/* diamond shape */
+.glow {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  /* transform: rotate(45deg); */
+  background: #c0ffe4;
+  box-shadow: 1px 1px 0 rgba(255, 153, 0, 0.5),
+    0 0 5px 3px rgba(255, 153, 0, 0.5);
+  animation: glow 2s infinite ease;
+}
+.glow:before,
+.glow:after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+.glow:after {
+  left: 0;
+  width: 4px;
+  height: 48px;
+  background: #fff;
+  z-index: 5;
+  animation: sheen 5s infinite;
+}
+
+/* animates box shadow glow effect */
+@keyframes glow {
+  0%,
+  100% {
+    box-shadow: 1px 1px var(--primary-color), 0 0 10px 5px var(--primary-color),
+      inset 2px 2px var(--primary-color);
+  }
+  50% {
+    box-shadow: 1px 1px var(--primary-color), 0 0 16px 8px var(--primary-color),
+      inset 2px 2px var(--primary-color);
+  }
+}
+/* animates light across diamond */
+@keyframes sheen {
+  0%,
+  100% {
+    left: 0;
+    opacity: 0;
+  }
+  1% {
+    opacity: 1;
+  }
+  10% {
+    left: calc(100% - 4px);
+  }
+  11%,
+  98% {
+    left: 100%;
+    opacity: 0;
+  }
+}
