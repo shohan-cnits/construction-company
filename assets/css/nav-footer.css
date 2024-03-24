@@ -43,6 +43,8 @@ p {
 
 /* Universal End */
 
+/* Navbar Start */
+
 .main_nav {
   position: fixed;
   top: 30px;
@@ -130,7 +132,7 @@ p {
 }
 
 .nav-link > a {
-  /* line-height: 3rem; */
+  font-weight: 500;
   color: var(--black);
   padding: 0 0.8rem;
   letter-spacing: 1px;
@@ -142,8 +144,10 @@ p {
   transition: 0.5s;
 }
 
-.nav-link:hover > a {
-  transform: scale(1.1);
+.nav-link:hover > a,
+.nav-link a.active::after {
+  /* transform: scale(1.1); */
+  font-weight: 500;
   color: var(--primary-color);
 }
 
@@ -153,19 +157,6 @@ p {
 
 .dropdown-link i {
   transform: rotate(-90deg);
-}
-
-.arrow {
-  position: absolute;
-  width: 11px;
-  height: 11px;
-  top: -5.5px;
-  left: 32px;
-  background-color: #000000;
-  transform: rotate(45deg);
-  cursor: pointer;
-  transition: 0.3s;
-  z-index: -1;
 }
 
 .dropdown-link {
@@ -276,22 +267,37 @@ p {
   }
 }
 
+.nav-link a.active {
+  color: var(--primary-color);
+}
 .nav-link a.active::after {
   position: absolute;
   content: "";
   width: 2px;
   left: 42%;
   color: var(--primary-color);
-  right: 0 !important;
+  right: 0;
   top: 100%;
-  bottom: 0 !important;
-  height: 20px !important;
-  background: var(--primary-color) !important;
+  bottom: 0;
+  height: 20px;
+  background: var(--primary-color);
 }
 
 @media (max-width: 992px) {
   .hamburger-menu-container {
     display: flex;
+  }
+
+  .nav-link a.active {
+    color: var(--black);
+  }
+
+  .nav-link a.active::after {
+    display: none;
+  }
+
+  .nav-link:hover > a {
+    color: var(--black);
   }
 
   #check {
@@ -486,3 +492,5 @@ p {
   color: #383838;
   font-family: var(--secondary-font);
 }
+
+/* Navbar End */

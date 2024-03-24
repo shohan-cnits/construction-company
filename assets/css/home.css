@@ -43,9 +43,11 @@ p {
 
 /* Universal End */
 
+/* Hero Start */
+
 #hero {
   position: relative;
-  height: 100vh;
+  height: 850px;
 }
 
 .swiper {
@@ -65,7 +67,7 @@ p {
 .slider_image img {
   display: block;
   width: 100%;
-  height: 100vh;
+  height: 850px;
   object-fit: cover;
 }
 
@@ -104,7 +106,7 @@ p {
 .swiper-vertical > .swiper-pagination-bullets {
   left: 10% !important;
   right: 0 !important;
-  top: 70% !important;
+  top: 80% !important;
   bottom: 0 !important;
 }
 
@@ -172,7 +174,7 @@ p {
 
 .hero_header_img {
   position: absolute;
-  top: 50%;
+  top: 47%;
   left: 0;
   right: 0;
 }
@@ -198,6 +200,23 @@ p {
   font-size: 50px;
 }
 
+.hero_heading_pragraph {
+  position: absolute;
+  top: 170%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.hero_heading_pragraph p {
+  color: var(--white);
+  width: 900px;
+  display: block;
+  position: relative;
+  margin: auto;
+  font-size: 16px;
+}
+
 .hero_btn {
   position: absolute;
   top: 70%;
@@ -208,6 +227,7 @@ p {
 .hero_btn a {
   width: 160px;
   height: 45px;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -221,61 +241,110 @@ p {
   border-radius: 3px;
 }
 
-/* diamond shape */
-.glow {
-  position: relative;
-  width: 48px;
-  height: 48px;
-  /* transform: rotate(45deg); */
-  background: #c0ffe4;
-  box-shadow: 1px 1px 0 rgba(255, 153, 0, 0.5),
-    0 0 5px 3px rgba(255, 153, 0, 0.5);
-  animation: glow 2s infinite ease;
-}
-.glow:before,
-.glow:after {
+/* .hero_btn a:hover::before {
+  animation: animation 2s linear infinite;
+} */
+
+.hero_btn a::after {
   content: "";
-  display: block;
   position: absolute;
-}
-
-.glow:after {
+  width: 160px;
+  height: 45px;
+  background: var(--primary-color);
+  border-radius: 5px;
+  top: 0;
   left: 0;
-  width: 4px;
-  height: 48px;
-  background: #fff;
-  z-index: 5;
-  animation: sheen 5s infinite;
+  z-index: -9;
+  animation: bouncing 2s linear infinite;
 }
 
-/* animates box shadow glow effect */
-@keyframes glow {
-  0%,
-  100% {
-    box-shadow: 1px 1px var(--primary-color), 0 0 10px 5px var(--primary-color),
-      inset 2px 2px var(--primary-color);
-  }
-  50% {
-    box-shadow: 1px 1px var(--primary-color), 0 0 16px 8px var(--primary-color),
-      inset 2px 2px var(--primary-color);
-  }
-}
-/* animates light across diamond */
-@keyframes sheen {
-  0%,
-  100% {
-    left: 0;
-    opacity: 0;
-  }
-  1% {
+@keyframes bouncing {
+  0% {
+    transform: scale(1);
     opacity: 1;
   }
-  10% {
-    left: calc(100% - 4px);
-  }
-  11%,
-  98% {
-    left: 100%;
+
+  100% {
+    transform: scale(1.1, 1.2);
     opacity: 0;
   }
 }
+
+@media screen and (max-width: 992px) {
+  .hero_heading h1 {
+    width: 600px;
+    font-size: 35px;
+  }
+
+  .hero_header_img {
+    top: 42%;
+  }
+
+  .hero_header_img img {
+    width: 500px;
+  }
+
+  .hero_banner_img_text h1 {
+    font-size: 35px;
+  }
+
+  .hero_heading_pragraph p {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero_heading h1 {
+    width: 400px;
+    font-size: 30px;
+  }
+
+  .hero_header_img {
+    top: 40%;
+  }
+
+  .hero_header_img img {
+    width: 380px;
+  }
+
+  .hero_banner_img_text h1 {
+    font-size: 30px;
+  }
+
+  .hero_heading_pragraph p {
+    width: 400px;
+  }
+
+  .hero_btn {
+    top: 65%;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .hero_heading h1 {
+    width: 350px;
+    font-size: 27px;
+  }
+
+  .hero_header_img {
+    top: 40%;
+  }
+
+  .hero_header_img img {
+    width: 350px;
+  }
+
+  .hero_banner_img_text h1 {
+    font-size: 25px;
+  }
+
+  .hero_heading_pragraph p {
+    width: 350px;
+  }
+
+  .hero_btn {
+    top: 65%;
+  }
+}
+
+/* Hero End */
