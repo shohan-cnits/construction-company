@@ -47,7 +47,7 @@ p {
 
 #hero {
   position: relative;
-  height: 850px;
+  height: 90vh;
 }
 
 .swiper {
@@ -67,7 +67,7 @@ p {
 .slider_image img {
   display: block;
   width: 100%;
-  height: 850px;
+  height: 90vh;
   object-fit: cover;
 }
 
@@ -105,9 +105,7 @@ p {
 .swiper-pagination-vertical.swiper-pagination-bullets,
 .swiper-vertical > .swiper-pagination-bullets {
   left: 10% !important;
-  right: 0 !important;
-  top: 80% !important;
-  bottom: 0 !important;
+  top: 75% !important;
 }
 
 .swiper-pagination-vertical.swiper-pagination-bullets .swiper-pagination-bullet,
@@ -174,7 +172,7 @@ p {
 
 .hero_header_img {
   position: absolute;
-  top: 47%;
+  top: 55%;
   left: 0;
   right: 0;
 }
@@ -202,10 +200,9 @@ p {
 
 .hero_heading_pragraph {
   position: absolute;
-  top: 170%;
+  top: 140%;
   left: 0;
   right: 0;
-  bottom: 0;
 }
 
 .hero_heading_pragraph p {
@@ -219,7 +216,7 @@ p {
 
 .hero_btn {
   position: absolute;
-  top: 70%;
+  top: 85%;
   left: 0;
   right: 0;
 }
@@ -277,7 +274,7 @@ p {
   }
 
   .hero_header_img {
-    top: 42%;
+    top: 48%;
   }
 
   .hero_header_img img {
@@ -300,7 +297,7 @@ p {
   }
 
   .hero_header_img {
-    top: 40%;
+    top: 48%;
   }
 
   .hero_header_img img {
@@ -316,34 +313,56 @@ p {
   }
 
   .hero_btn {
-    top: 65%;
+    top: 78%;
   }
 }
 
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 440px) {
   .hero_heading h1 {
     width: 350px;
     font-size: 27px;
   }
 
   .hero_header_img {
-    top: 40%;
+    top: 43%;
   }
 
   .hero_header_img img {
-    width: 350px;
+    width: 300px;
   }
 
   .hero_banner_img_text h1 {
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .hero_heading_pragraph p {
-    width: 350px;
+    width: 330px;
   }
 
   .hero_btn {
-    top: 65%;
+    top: 75%;
+  }
+  .swiper-pagination-vertical.swiper-pagination-bullets,
+  .swiper-vertical > .swiper-pagination-bullets {
+    left: 10% !important;
+    top: 85% !important;
+  }
+
+  .swiper-pagination-bullet:nth-child(2) {
+    height: 15px !important;
+    margin-left: 10px !important;
+  }
+
+  .swiper-pagination-bullet:nth-child(4) {
+    height: 15px !important;
+    margin-left: 10px !important;
+  }
+
+  .swiper-pagination-bullet {
+    width: 20px !important;
+    height: 20px !important;
+    font-size: 10px;
+    line-height: 20px;
   }
 }
 
