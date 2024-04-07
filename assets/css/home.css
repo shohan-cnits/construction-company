@@ -535,3 +535,261 @@ p {
 }
 
 /* Feature End */
+
+/* About Start */
+#about {
+  padding: 70px 0 50px 0;
+}
+
+.about_heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.about_heading span {
+  height: 1px;
+  width: 40px;
+  background: var(--primary-color);
+  margin-right: 10px;
+}
+
+.about_heading p {
+  margin-top: 15px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.about_heading_title {
+  padding-bottom: 70px;
+}
+
+.about_heading_title h1 {
+  text-align: center;
+  font-size: 40px;
+  padding-bottom: 25px;
+}
+
+.about_heading_title p {
+  width: 750px;
+  text-align: center;
+  margin: auto;
+  display: block;
+  font-size: 16px;
+  color: #7a94a3;
+}
+
+.about_content_menu_list {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.about_content_menu_list img {
+  width: 30px;
+}
+
+.about_content_menu_list:nth-child(4) {
+  padding-bottom: 50px;
+}
+
+.about_content_menu_list span {
+  font-family: var(--secondary-font);
+  font-weight: 500;
+  color: var(--black);
+  font-size: 16px;
+}
+
+.card_btn_wrapper {
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.card_btn {
+  border: 2px solid rgba(245, 147, 5, 1);
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  gap: 5px;
+  /* width: 200px; */
+  padding: 0 5px 0 0;
+  border-radius: 0 30px 30px 0;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.card_btn a:last-child {
+  width: 40px !important;
+  height: 40px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border-radius: 50%;
+  border: 2px solid rgba(245, 147, 5, 1);
+  transition: 0.5s;
+}
+
+.card_btn a:nth-child(1) {
+  visibility: hidden;
+  padding: 0 0 0 0px;
+  opacity: 0;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(245, 147, 5, 1);
+  width: 0;
+  white-space: nowrap;
+  transition: 0.5s;
+}
+
+.card_btn:hover.card_btn a:nth-child(1) {
+  visibility: visible;
+  opacity: 1;
+  width: 120px;
+  padding: 0 0 0 10px;
+}
+
+.card_btn:hover.card_btn a:last-child {
+  background: rgba(245, 147, 5, 1);
+}
+
+.card_btn:hover path {
+  fill: #fff;
+}
+
+@media screen and (max-width: 836px) {
+  .about_heading_title p {
+    width: 600px;
+    font-size: 15px;
+  }
+
+  .feature_card_middile::before {
+    display: none;
+  }
+
+  .feature_card_last::before {
+    display: none;
+  }
+
+  .feature_card::before {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 776px) {
+  .about_heading_title p {
+    width: 450px;
+    font-size: 15px;
+  }
+
+  .feature_card_middile::before {
+    display: none;
+  }
+
+  .feature_card_last::before {
+    display: none;
+  }
+
+  .feature_card::before {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .about_heading_title p {
+    width: 330px;
+    font-size: 15px;
+  }
+}
+
+/* About End */
+
+/* Service Start */
+
+#services {
+  padding: 50px 0;
+}
+
+.services_heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.services_heading span {
+  height: 1px;
+  width: 40px;
+  background: var(--primary-color);
+  margin-right: 10px;
+}
+
+.services_heading p {
+  margin-top: 15px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.services_heading_title {
+  padding-bottom: 50px;
+}
+
+.services_heading_title h1 {
+  text-align: center;
+  font-size: 40px;
+  padding-bottom: 25px;
+}
+
+.services_content_card {
+  border: var(--primary-border);
+  width: 100%;
+  aspect-ratio: 2/1;
+  padding: 50px 25px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.services_content_card:hover {
+  box-shadow: inset rgb(212, 212, 212) 0px 0px 60px -12px;
+  border-color: rgb(255, 255, 255);
+}
+
+.services_card_img {
+  width: 80px;
+  height: 70px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+.services_card_img img {
+  width: 100%;
+  height: 100%;
+}
+
+.services_card_heading {
+  margin-left: 50px;
+  height: 120px;
+  margin-bottom: 20px;
+}
+
+.services_card_heading h1 {
+  font-size: 32px;
+  line-height: 45px;
+}
+
+.services_card_divider {
+  height: 1px;
+  width: 100%;
+  background: var(--secondary-color);
+  margin-bottom: 40px;
+}
+
+.services_card_text p {
+  font-size: 16px;
+  color: var(--secondary-color);
+}
+/* Service End */
