@@ -1,4 +1,4 @@
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".hero-slider", {
     direction: "vertical",
     slidesPerView: 1,
     spaceBetween: 0,
@@ -7,7 +7,7 @@ var swiper = new Swiper(".mySwiper", {
       disableOnInteraction: false,
     },
     loop: true,
-    mousewheel: true,
+    mousewheel: false,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
