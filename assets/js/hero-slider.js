@@ -1,7 +1,7 @@
 var swiper = new Swiper(".hero-slider", {
     direction: "vertical",
     slidesPerView: 1,
-    spaceBetween: 30,
+    spaceBetween: 0,
     autoplay: {
       delay: 5000,
       disableOnInteraction: false,

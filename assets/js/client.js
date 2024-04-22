@@ -1,10 +1,13 @@
 var swiper = new Swiper(".client-slider", {
     spaceBetween: 30,
     pagination: {
-      el: ".client-pagination",
+      el: ".swiper-pagination",
       clickable: true,
     },
- 
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
     
     loop: true,
 
