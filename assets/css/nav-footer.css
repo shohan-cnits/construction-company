@@ -45,6 +45,49 @@ p {
 
 /* Navbar Start */
 
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  /* width: 10rem; */
+  background: red;
+  transform: translateY(35px);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.dropdown ul {
+  position: absolute;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: var(--white);
+}
+
+.dropdowon_menu ul li {
+  width: 12rem !important;
+  /* background: red; */
+  padding: 10px;
+}
+
+.dropdowon_menu ul li a {
+  display: block;
+  text-align: center;
+  font-family: var(--secondary-font);
+}
+
+.dropdown-link {
+  position: relative;
+}
+
+.nav-link:hover > .dropdown,
+.dropdown-link:hover > .dropdown {
+  transform: translateY(24px);
+  opacity: 1;
+  pointer-events: auto;
+}
+
 .main_nav {
   position: fixed;
   top: 30px;
@@ -123,8 +166,6 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* padding: 0;
-  margin: 0; */
 }
 
 .nav-link {
@@ -139,14 +180,26 @@ p {
   font-size: 16px;
   font-family: var(--secondary-font);
   display: flex;
-  align-items: center;
+
+  /* align-items: center; */
   justify-content: space-between;
   transition: 0.5s;
 }
 
+/* .nav-link > a {
+  line-height: 3rem;
+  color: #fff;
+  padding: 0 0.8rem;
+  letter-spacing: 1px;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.5s;
+} */
+
 .nav-link:hover > a,
 .nav-link a.active::after {
-  /* transform: scale(1.1); */
   font-weight: 500;
   color: var(--primary-color);
 }
@@ -159,29 +212,16 @@ p {
   transform: rotate(-90deg);
 }
 
-.dropdown-link {
+/* .dropdown-link {
   position: relative;
-}
+} */
 
-.dropdown.second {
-  top: 0;
-  left: 100%;
-  padding-left: 0.8rem;
-  cursor: pointer;
-  transform: translateX(10px);
-}
-
-.dropdown.second .arrow {
-  top: 10px;
-  left: -5.5px;
-}
-
-.nav-link:hover > .dropdown,
+/* .nav-link:hover > .dropdown,
 .dropdown-link:hover > .dropdown {
   transform: translate(0, 0);
   opacity: 1;
   pointer-events: auto;
-}
+} */
 
 .hamburger-menu-container {
   flex: 1;
@@ -274,7 +314,7 @@ p {
   position: absolute;
   content: "";
   width: 2px;
-  left: 42%;
+  left: 45%;
   color: var(--primary-color);
   right: 0;
   top: 100%;
