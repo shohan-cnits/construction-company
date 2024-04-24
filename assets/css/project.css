@@ -310,6 +310,19 @@ p {
   color: var(--white);
   border: 2px solid var(--primary-color);
 }
+
+@media screen and (max-width: 575px) {
+  .project_card_pagenation a {
+    border: 2px solid rgba(1, 39, 60, 1);
+    padding: 5px 10px;
+    font-family: var(--secondary-font);
+    font-size: 14px;
+    color: rgba(1, 39, 60, 1);
+    font-weight: 500;
+    border-radius: 5px;
+    transition: 0.5s;
+  }
+}
 /* Projcet End */
 
 /* Client Start */
