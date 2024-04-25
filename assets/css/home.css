@@ -708,6 +708,119 @@ p {
   }
 }
 
+.about_counter {
+  position: relative;
+}
+
+.about_counter_number_last {
+  margin-top: 80px;
+}
+
+.about_counter_number_last .counter span {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.about_counter_number_last .counter p:nth-child(1) {
+  font-size: 40px;
+  font-weight: 500;
+  color: var(--black);
+}
+
+.about_counter_number_last .counter p:nth-child(2) {
+  font-size: 16px;
+  color: var(--black);
+}
+
+.about_counter_number_fast .counter span {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.about_counter_number_fast .counter p:nth-child(1) {
+  font-size: 40px;
+  font-weight: 500;
+  color: var(--black);
+}
+
+.about_counter_number_fast .counter p:nth-child(2) {
+  font-size: 16px;
+  color: var(--black);
+}
+
+.about_counter_middile {
+  position: absolute;
+  top: 50%;
+  width: 190px;
+  height: 190px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.about_counet_middile_point {
+  position: relative;
+  width: 190px;
+  height: 190px;
+  background: var(--primary-color);
+  border-radius: 5px;
+  top: 50%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+}
+
+.about_counet_middile_point .counter p:nth-child(1) {
+  text-align: center;
+  padding-top: 40px;
+  font-size: 40px;
+  color: var(--black);
+}
+
+.about_counet_middile_point .counter p:nth-child(2) {
+  text-align: center;
+  font-size: 16px;
+  color: var(--black);
+}
+
+.about_counet_middile_point:hover::before {
+  animation: animation 2s linear infinite;
+}
+
+.about_counet_middile_point::after {
+  content: "";
+  position: absolute;
+  width: 190px;
+  height: 190px;
+  background: var(--primary-color);
+  border-radius: 5px;
+  top: 0;
+  left: 0;
+  z-index: -9;
+  animation: bouncing 3s linear infinite;
+}
+
+@keyframes bouncing {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1.1, 1.1);
+    opacity: 0;
+  }
+}
+
+.about_content_menu_list img {
+  width: 100%;
+}
+
+.about_counter {
+  overflow: hidden;
+}
+
+.about_content_menu_list img {
+  width: 30px;
+}
 /* About End */
 
 /* Service Start */

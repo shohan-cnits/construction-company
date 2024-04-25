@@ -349,3 +349,116 @@ p {
   border-color: rgb(202, 202, 202);
 }
 /* Blog Single Content End */
+
+/* Offering Start  */
+
+#offering {
+  padding: 0 0 40px 0;
+}
+.offering_wrapper {
+  background: url(../image/home-page-all-image/offering_img_01.svg);
+  width: 100%;
+  height: 350px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.offering_heading {
+  display: block;
+  margin: auto;
+  width: 720px;
+}
+
+.offering_heading h1 {
+  padding-top: 60px;
+  text-align: center;
+  font-size: 40px;
+  color: var(--white);
+}
+
+.offering_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.offering_text p {
+  display: inline-block;
+  padding-bottom: 4px;
+  border-bottom: 2px solid var(--white);
+  color: var(--primary-color);
+  font-size: 16px;
+}
+
+.social_content {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.social_content_menu {
+  border: 2px solid rgba(1, 39, 60, 1);
+  padding: 10px;
+  background: rgba(1, 39, 60, 1);
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.social_content_menu a {
+  display: block;
+  text-align: center;
+  border: 1px solid var(--white);
+  line-height: 10px;
+  padding: 5px;
+  border-radius: 3px;
+  transition: 0.5s;
+}
+
+.social_content_menu a:nth-child(2) {
+  margin-top: 10px;
+}
+
+.social_content_menu a:nth-child(3) {
+  margin-top: 10px;
+}
+
+.social_content_menu a:nth-child(4) {
+  margin-top: 10px;
+}
+
+.social_content_menu a img {
+  width: 18px;
+  height: 20px;
+}
+
+.social_content_menu a:hover {
+  background: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+@media screen and (max-width: 767px) {
+  .offering_heading {
+    width: 675px;
+  }
+}
+
+@media screen and (max-width: 675px) {
+  .offering_heading {
+    width: 575px;
+  }
+}
+
+@media screen and (max-width: 578px) {
+  .offering_heading {
+    width: 335px;
+  }
+
+  .offering_heading h1 {
+    font-size: 30px;
+  }
+}
+
+/* Offering End  */
