@@ -231,7 +231,12 @@ p {
   font-size: 16px;
   font-family: var(--secondary-font);
   color: var(--white);
+  transition: 0.5s;
   border-radius: 3px;
+}
+
+.button_box_content button:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 /* Contact Box End */
 

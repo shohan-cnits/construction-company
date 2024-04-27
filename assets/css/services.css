@@ -369,6 +369,7 @@ p {
   align-items: center;
   background: #fff;
   border-radius: 50%;
+  color: var(--black);
   border: 2px solid rgba(245, 147, 5, 1);
   transition: 0.5s;
 }
@@ -381,7 +382,7 @@ p {
   font-size: 16px;
   font-weight: 600;
   font-family: var(--secondary-font);
-  color: rgba(245, 147, 5, 1);
+  color: var(--black);
   width: 0;
   white-space: nowrap;
   transition: 0.5s;
@@ -392,13 +393,18 @@ p {
   opacity: 1;
   width: 120px;
   padding: 0 0 0 10px;
+  /* color: var(--primary-color); */
 }
 
-.card_btn:hover.card_btn a:last-child {
-  background: rgba(245, 147, 5, 1);
+.card_btn a:nth-child(1):hover {
+  color: var(--primary-color);
 }
 
-.card_btn:hover path {
+.card_btn a:last-child:hover {
+  background: var(--primary-color);
+}
+
+.card_btn a:last-child:hover path {
   fill: #fff;
 }
 /* Service End */

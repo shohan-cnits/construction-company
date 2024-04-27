@@ -714,11 +714,11 @@ p {
 .scroll_top.active {
   visibility: visible;
   opacity: 1;
-  bottom: 40px;
+  bottom: 20px;
 }
 
 .scroll_top_img {
-  width: 100px;
+  width: 90px;
   height: 70px;
   transition: 0.5s;
 }
@@ -728,7 +728,11 @@ p {
   height: 100%;
 }
 
-.scroll_top_img svg:hover path {
-  fill: var(--black);
+.scroll_top_img svg:hover .go_back_bg {
+  fill: #ff9900 !important;
+}
+
+.scroll_top_img svg:hover .go_back_up {
+  fill: var(--black) !important;
 }
 /* Go Back End */
