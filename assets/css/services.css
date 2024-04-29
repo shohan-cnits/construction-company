@@ -151,6 +151,9 @@ p {
   overflow: hidden;
   opacity: 0;
   border-radius: 10px;
+  transition-delay: 0.2s !important;
+  transition-duration: 1s !important;
+  transition-timing-function: linear !important;
   z-index: -1;
 }
 
@@ -191,6 +194,9 @@ p {
   overflow: hidden;
   opacity: 0;
   border-radius: 10px;
+  transition-delay: 0.2s !important;
+  transition-duration: 1s !important;
+  transition-timing-function: linear !important;
   z-index: -1;
 }
 
@@ -224,6 +230,9 @@ p {
   overflow: hidden;
   opacity: 0;
   border-radius: 10px;
+  transition-delay: 0.2s !important;
+  transition-duration: 1s !important;
+  transition-timing-function: linear !important;
   z-index: -1;
   transition: 0.5s;
 }
@@ -443,11 +452,12 @@ p {
   padding-top: 40px;
 }
 
-.offering_text p {
+.offering_text p a {
   display: inline-block;
   padding-bottom: 4px;
   border-bottom: 2px solid var(--white);
   color: var(--primary-color);
+  font-family: var(--secondary-font);
   font-size: 16px;
 }
 

@@ -379,7 +379,6 @@ p {
   width: 30px;
 }
 /* About End */
-
 /* Team Member Start */
 
 #tranding {
@@ -419,7 +418,7 @@ p {
 
 .tranding-slide-img {
   width: 350px !important;
-  height: 400px !important;
+  height: 430px !important;
   display: block;
   margin: auto;
 }
@@ -677,11 +676,12 @@ p {
   padding-top: 40px;
 }
 
-.offering_text p {
+.offering_text p a {
   display: inline-block;
   padding-bottom: 4px;
   border-bottom: 2px solid var(--white);
   color: var(--primary-color);
+  font-family: var(--secondary-font);
   font-size: 16px;
 }
 
