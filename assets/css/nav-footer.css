@@ -45,6 +45,26 @@ p {
 
 /* Navbar Start */
 
+.scrolled .main_nav {
+  top: 0 !important;
+  background: var(--white);
+  box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.1);
+}
+
+.scrolled .logo-container svg {
+  width: 100px;
+  height: 60px;
+}
+
+.scrolled .top_bar_wrapper {
+  display: none;
+}
+
+.scrolled .navbar_wrapper {
+  display: flex;
+  padding-top: 30px !important;
+}
+
 .dropdown {
   position: absolute;
   top: 100%;
@@ -55,6 +75,7 @@ p {
   pointer-events: auto;
   visibility: hidden;
   transition: 0.7s;
+  width: 100%;
 }
 
 .dropdown ul {
@@ -63,6 +84,8 @@ p {
   padding: 0;
   margin: 0;
   background: var(--white);
+  border: 1px solid rgba(122, 148, 163, 0.5);
+  border-radius: 3px 3px 5px 5px;
 }
 
 .dropdowon_menu ul li {
@@ -108,26 +131,6 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.scrolled .main_nav {
-  top: 0 !important;
-  background: var(--white);
-  box-shadow: 3px 3px 4px 1px rgba(0, 0, 0, 0.2);
-}
-
-.scrolled .logo-container svg {
-  width: 100px;
-  height: 60px;
-}
-
-.scrolled .top_bar_wrapper {
-  display: none;
-}
-
-.scrolled .navbar_wrapper {
-  display: flex;
-  padding-top: 30px !important;
 }
 
 .main_nav_content {
@@ -637,6 +640,7 @@ p {
 
 .footer_content_menu ul li a {
   font-size: 18px;
+  display: inline-block;
   color: rgba(122, 148, 163, 1);
   font-weight: 500;
   transition: 0.5s;
@@ -669,6 +673,7 @@ p {
   font-size: 16px;
   font-family: var(--secondary-font);
   font-weight: 500;
+  display: block;
   color: var(--secondary-color);
   transition: 0.5s;
 }
@@ -779,3 +784,71 @@ p {
   fill: var(--black) !important;
 }
 /* Go Back End */
+
+/* Loading Start */
+/* 
+#loading {
+  height: 100vh;
+  width: 100%;
+}
+
+.loading-page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  color: rgb(25, 22, 84);
+}
+
+#svg {
+  height: 150px;
+  width: 150px;
+  stroke: var(--white);
+  fill-opacity: 0;
+  stroke-width: 3px;
+  stroke-dasharray: 4500;
+  animation: draw 8s ease;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dashoffset: 4500;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.name-container {
+  height: 30px;
+  overflow: hidden;
+}
+
+.logo-name {
+  color: var(--white);
+  font-size: 20px;
+  letter-spacing: 12px;
+  text-transform: uppercase;
+  margin-left: 20px;
+  font-weight: bolder;
+}
+
+.loading_text {
+  background-color: var(--black);
+  color: var(--white);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-family: var(--primary-font);
+} */
+/* Loading End */
