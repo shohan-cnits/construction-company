@@ -112,6 +112,8 @@ p {
 
 .scrolled .main_nav {
   top: 0 !important;
+  background: var(--white);
+  box-shadow: 3px 3px 4px 1px rgba(0, 0, 0, 0.2);
 }
 
 .scrolled .logo-container svg {
@@ -130,7 +132,7 @@ p {
 
 .main_nav_content {
   position: relative;
-  box-shadow: 3px 3px 4px 1px rgba(0, 0, 0, 0.2);
+
   margin: 0 auto;
   display: flex;
   background: var(--white);
